@@ -45,6 +45,6 @@ animation pinos t =
 main :: IO ()
 main = do
   BS.writeFile "tmp.bmp" bmpe
-  pic <- loadBMP "tmp.bmp"
+  !pic <- loadBMP "tmp.bmp"
   _ <- openBrowser "https://bald.su"
-  animate FullScreen black $ animation pic
+  animate (InWindow "Free... At last..." (1000, 1000) (10, 10)) black $ animation pic
