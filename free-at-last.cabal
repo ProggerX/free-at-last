@@ -14,6 +14,6 @@ common warnings
 executable free-at-last
     import:           warnings
     main-is:          Main.hs
-    build-depends:    base ^>=4.19.2.0, brillo, open-browser, file-embed, bytestring, template-haskell
+    build-depends:    base ^>=4.18, brillo, open-browser, file-embed, bytestring, template-haskell
     hs-source-dirs:   app
     default-language: GHC2021
