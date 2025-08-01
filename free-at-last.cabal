@@ -1,0 +1,19 @@
+cabal-version:      3.0
+name:               free-at-last
+version:            0.1.0.0
+license:            GPL-3.0-only
+license-file:       LICENSE
+author:             ProggerX
+maintainer:         x@proggers.ru
+build-type:         Simple
+data-files:         pinos.bmp
+
+common warnings
+    ghc-options: -Wall
+
+executable free-at-last
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.19.2.0, brillo, open-browser, file-embed, bytestring, template-haskell
+    hs-source-dirs:   app
+    default-language: GHC2021
