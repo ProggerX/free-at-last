@@ -63,7 +63,7 @@ jobs:
         cabal update
         cabal build --only-dependencies
     - name: Build
-      run: cabal build
+      run: cabal build --enable-executable-static
     - name: Install
       run: cabal install --installdir .
     - uses: actions/upload-artifact@v4
